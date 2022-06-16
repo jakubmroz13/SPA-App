@@ -1,0 +1,43 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    >div {
+        padding: 2em 0 1em 0;
+        width: 90%;
+        border-bottom: 1px solid rgb(213, 213, 213);
+
+        label {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                text-align: center;
+            }
+
+            p {
+                position: absolute;
+                top: -2.5em;
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    .TableComponent {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Pagination {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 350px);
+        justify-content: center;
+        gap: 2em;
+    }
+}
